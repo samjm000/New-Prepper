@@ -40,6 +40,5 @@ def get_chi_numbers(excelFile):
 
 # test the program
 if __name__ == "__main__":
-
     print("Testing Excel processing")
-    get_chi_numbers(r"clinic lists\GN Clinic 200524.xls")
+

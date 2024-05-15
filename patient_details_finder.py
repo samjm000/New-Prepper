@@ -68,25 +68,5 @@ def patient_details_finder(clinic_list, document_list):
 
 
 if __name__ == "__main__":
-    
-    print("Running Test")
+      print("Running Test")
 
-    # Load test data
-    # Importing Excel file details
-    input_excel_file = r"clinic lists\GN Clinic 200524.xls"
-    print(f"Reading in File : {input_excel_file}")
-    clinic_list = excel_processor.get_chi_numbers(input_excel_file)
-
-    print(f"Generated time and CHI dictionary {clinic_list}\\n")
-
-    # organise and get list of previous documents (Not dealt with .doc files yet)
-    sorted_document_list = document_organiser.get_documents_in_order()
-
-    # get new document list converting .doc to .docx
-    all_documents_docx = document_converter.process_documents(sorted_document_list)
-
-    # import patient clinic list details
-    patient_details_finder(clinic_list, all_documents_docx)
-
-    # for patient in list_of_patients:
-    #    print(f"For patient, {patient.CHI} the output is: {patient.output()}")

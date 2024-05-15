@@ -37,4 +37,4 @@ def clinic_prepper(input_excel_file, file_name):
 
 if __name__ == "__main__":
     print("Running Program")
-    clinic_prepper(r"clinic lists\GN Clinic 200524.xls", "test.docx")
+
